@@ -37,7 +37,7 @@ body{
 
 nav{
     padding: 30px;
-    background-color: brown;
+    background-color: orange;
     display: flex;
     justify-content: end;
 }
@@ -61,7 +61,7 @@ nav div{
     height: 15%;
     background: black;
     transition: ease-in .3s;
- 
+    margin-bottom:5px
 }
 
 
