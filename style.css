@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:black;
+    color: white;
+    overflow-x: hidden
+}
+
+.hiden-scroll{
+    overflow:hidden;
+    transition: 1s;
+     scroll-behavior: smooth;
+}
+
+.content {
+    transition: ease-out .1s;
+    padding: 30px;
+    margin-top: 50px; 
+    position: relative;
+    z-index: -5
+}
+
+.scale{
+    transform: scale(1.1);
+    position: relative;
+    z-index: -5
+}
+
+.content p{
+    font-size: 19px;
+    
+}
+
+nav{
+    padding: 30px;
+    background-color: brown;
+    display: flex;
+    justify-content: end;
+}
+
+nav div{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    left: 19px;
+    z-index: 3;
+    flex-direction: column;
+    cursor: pointer;
+    top: 45px
+}
+
+
+
+ span{
+    width: 100%;
+    height: 15%;
+    background: black;
+    transition: ease-in .3s;
+ 
+}
+
+
+.one {
+    transform:rotate(45deg) translateY(13px);  
+} 
+
+.two{
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s
+}
+
+.three {
+    transform:rotate(-45deg) translateY(-13px);
+    
+}
+
+
+.nav-tray{
+    width: 300px;
+    height: 100%;
+    background: rgba(149, 6, 6, 0.986);
+    color:white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+
+ul{
+    margin: auto 19px;
+    height:80%;
+    list-style: none;
+}
+
+li{
+    font-size: 1.4em;
+    margin-top: 19px
+}
+
+.translate{
+    transform: translateX(-100%);
+    
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.424);
+    z-index: 0;
+    display: none
+}
+
+.block{
+    display: block;
+}
+
+
+.float{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: brown;
+    box-shadow: .3px .4px 13px black;
+    position: fixed;
+    bottom: 30px;
+    right: 30px
+}
